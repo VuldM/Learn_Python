@@ -3,6 +3,7 @@
 # 10 -> 1 2 4 8
 n = int(input('Введите конечную степень числа 2: '))
 m = 0
-for i in range(0, n, 2):
-    print(f'{2**i}')
+while 2 ** m <= n:
+    print(f'{2**m}')
+    m = m + 1
     
