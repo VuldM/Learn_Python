@@ -3,5 +3,8 @@
 #123 -> 6 (1 + 2 + 3)
 #100 -> 1 (1 + 0 + 0)
 num = int(input('Введите трехзначное число:'))
-sumNum = int(num%10) + int(num/10%10) + int(num/100)
-print(f' Сумма трехзначного числа : {sumNum}')
+sumNum = num%10 + num//10%10 + num//100
+print(f'Сумма трехзначного числа: {sumNum}')
+print(sumNum := num%10 + num//10%10+ num//100)
+num_1 = input('Введите трехзначное число:')
+print(sum := int(num_1[0]) + int(num_1[1]) + int(num_1[2]))
