@@ -14,3 +14,19 @@
 # заданной во входном файле грядки.
 # 4 -> 1 2 3 4
 # 9
+import random
+bushes = int(input('Введите количество кустов на грядке: '))
+berry_bed = []
+max_coll = []
+for _ in range(bushes):
+    berry_bed.append(random.randint(1, 10))
+print(berry_bed)
+for i in range(len(berry_bed)):
+    if i + 1 >= len(berry_bed):
+        blueberries  = berry_bed[i - 1] +  berry_bed[i]  + berry_bed[0]
+    else:
+        blueberries =  berry_bed[i - 1] +  berry_bed[i]  + berry_bed[i + 1]
+    max_coll.append(blueberries)
+print(max(max_coll))
+
+

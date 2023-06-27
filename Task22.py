@@ -14,10 +14,10 @@ m = int(input('Введите количество элементов второ
 print(n, m)
 list_1 = []
 list_2 = []
-for i in range(n):
+for _ in range(n):
    # plenty_1.add(int(input('Вводите элементы в первое множество:')))
    list_1.append(random.randint(1, 30))
-for i in range(m):
+for _ in range(m):
     #plenty_2.add(int(input('Вводите элементы во второе множество:'))) 
     list_2.append(random.randint(1, 30))
 plenty_1 = set(list_1)
