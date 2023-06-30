@@ -6,3 +6,14 @@
 # максимальные – на минимальные.
 # Input: 5 -> 1 3 3 3 4
 # Output: 1 3 3 3 1
+import random
+n = int(input('Введите количество оценок: '))
+list_0 = []
+for _ in range(n):
+    list_0.append(random.randint(1, 10))
+print(list_0)
+for i in range(n):
+    if list_0[i] == max(list_0):
+        list_0[i] = min(list_0)
+               
+print(list_0)         

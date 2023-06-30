@@ -5,3 +5,10 @@
 # имеет 2 делителя: 1 и n(само число)
 # Input: 5
 # Output: yes 
+n = int(input('Введите число: '))
+if n in[1,2]:
+    print('эти числа простые')
+for i in range(2, n-1):
+    if n%i == 1:
+        print('Число являтся простымю')
+        break
