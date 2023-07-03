@@ -7,3 +7,13 @@
 # строках.
 # Ввод:                   Вывод:
 # 1 2 3 2 3               2
+list_0 = [3, 2, 3, 2, 3, 4, 5, 4, 5]
+n = 0
+m = 1
+for i in range(len(list_0)-1):
+     for j in range(m, len(list_0)):
+        if list_0[i] == list_0[j]:
+            n = n + 1
+     print(n, m)
+     m = m + 1    
+        

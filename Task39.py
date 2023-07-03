@@ -10,3 +10,24 @@
 # 3 1 3 4 2 4 12
 # 6
 # 4 15 43 1 15 1       (каждое число вводится с новой строки)
+n = int(input('Введите количество элементов певрого массива: '))
+list_1 = []
+for i in range(n):
+    list_1.append(int(input('Введите значение:')))
+  
+m = int(input('Введите количество элементов второго массива: '))
+list_2 = []
+for i in range(m):
+    list_2.append(int(input('Введите значение:')))
+# list_1 = [3, 1, 3, 4, 2, 4, 12]
+# list_2 = [4, 15, 43, 1, 15, 1 ]
+list_3 = []
+print(list_1)      
+print(list_2)
+for i in range(len(list_1)):
+        if list_1[i] in list_2:  
+            None
+        else:
+            list_3.append(list_1[i]) 
+          
+print(list_3)

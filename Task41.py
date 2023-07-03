@@ -12,3 +12,14 @@
 # Вывод:                    Вывод:
 # 0                         2
 # (каждое число вводится с новой строки)
+n = int(input('Введите количество элементов певрого массива: '))
+list_0 = []
+for i in range(n):
+    list_0.append(int(input('Введите значение:')))
+#list_0 = [1, 5, 1, 5, 1]
+n = 0
+for i in range(len(list_0) - 2):
+    if list_0[i] < list_0[i + 1] > list_0[i + 2]:
+        n = n + 1
+print(list_0)
+print(n)
