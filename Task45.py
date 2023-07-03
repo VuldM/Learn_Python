@@ -42,3 +42,16 @@ for i in range(n):
     for j in range(i):
         if summ(i)==j and summ(j)==i and i!=j:
             print(f'{i} {j}')
+            def summ_del(num):
+    sum1 = 0
+    for i in range(1, num):
+       if num % i == 0:
+           sum1 += i
+    return sum1
+
+third = []
+for i in range(1, 20000):
+    second = summ_del(i)
+    first = summ_del(second)
+    if i == first and i < second:
+        print(i, second)
