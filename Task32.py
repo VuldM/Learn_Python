@@ -5,12 +5,18 @@
 # максимума)
 # Ввод: [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 # Вывод: [1, 9, 13, 14, 19]
+import random
+list_0 = [random.randint(-10, 10) for _ in range(20)]
+min_0 = int(input('Введите минимальный параметр: '))  #7
+max_0 = int(input('Введите максимальный параметр: ')) #10
+print(list_0)
+print(list_1 := [i for i in range(len(list_0)) if min_0 - 1 < list_0[i] < max_0 + 1])
 
-list_0 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
-min_0 = int(input('Введите минимальный параметр: '))
-max_0 = int(input('Введите максимальный параметр: '))
-list_1 = []
-for i in range(len(list_0)):
-    if min_0 - 1 < list_0[i] < max_0 + 1:
-        list_1.append(i)
-print(list_1)
+#list_0.append(random.randint(-10, 10))
+#list_0 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+# list_1 = []
+# for i in range(len(list_0)):
+#     if min_0 - 1 < list_0[i] < max_0 + 1:
+#         list_1.append(i)
+# print(list_1)
+
