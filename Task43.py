@@ -7,13 +7,15 @@
 # строках.
 # Ввод:                   Вывод:
 # 1 2 3 2 3               2
-list_0 = [3, 2, 3, 2, 3, 4, 5, 4, 5]
+list_0 = [1, 2, 3, 2, 3]
+list_1 = []
+set_0 = {}
 n = 0
-m = 1
-for i in range(len(list_0)-1):
-     for j in range(m, len(list_0)):
-        if list_0[i] == list_0[j]:
-            n = n + 1
-     print(n, m)
-     m = m + 1    
-        
+list_0.sort()
+print(list_0)
+for i in list_0:
+    n = list_0.count(i)
+    if n%2 == 0 or n > 2:
+        list_1.append(i)
+set_0 = set(list_1)    
+print(len(set_0))

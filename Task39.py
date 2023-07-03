@@ -19,15 +19,19 @@ m = int(input('Введите количество элементов второ
 list_2 = []
 for i in range(m):
     list_2.append(int(input('Введите значение:')))
-# list_1 = [3, 1, 3, 4, 2, 4, 12]
-# list_2 = [4, 15, 43, 1, 15, 1 ]
+list_1 = [3, 1, 3, 4, 2, 4, 12]
+list_2 = [4, 15, 43, 1, 15, 1 ]
 list_3 = []
 print(list_1)      
 print(list_2)
 for i in range(len(list_1)):
-        if list_1[i] in list_2:  
-            None
-        else:
-            list_3.append(list_1[i]) 
-          
-print(list_3)
+        if list_1[i] not in list_2:  
+            list_3.append(list_1[i])           
+print(list_3) 
+
+import random
+
+print(first := [random.randint(0, 10) for _ in range(int(input('Размер первого списка: ')))])
+print(second := [random.randint(0, 10) for _ in range(int(input('Размер второго списка: ')))])
+
+print([item for item in first if item not in second])
