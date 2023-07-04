@@ -15,20 +15,20 @@
 # пару не дает).
 # Ввод:                   Вывод:
 # 300                     220 284
-list_0 = []
-m = 0
-for i in range(2, n):
-    for j in range(1, i):
-        if i%j == 0: 
-            m = m + int(i/j)
-            print(f'{i}/{j} = {int(i/j)}')
-    list_0.append(m)     
-    print(f'Сумма делителей числа {i} равна {m}')
-    m = 0    
-for i in list_0:
-    if list_0.count(i) > 1:
-        print(list_0.index(i))
-print(list_0)
+# list_0 = []
+# m = 0
+# for i in range(2, n):
+#     for j in range(1, i):
+#         if i%j == 0: 
+#             m = m + int(i/j)
+#             print(f'{i}/{j} = {int(i/j)}')
+#     list_0.append(m)     
+#     print(f'Сумма делителей числа {i} равна {m}')
+#     m = 0    
+# for i in list_0:
+#     if list_0.count(i) > 1:
+#         print(list_0.index(i))
+# print(list_0)
 
 def summ(k):
     summa=0
@@ -42,16 +42,16 @@ for i in range(n):
     for j in range(i):
         if summ(i)==j and summ(j)==i and i!=j:
             print(f'{i} {j}')
-            def summ_del(num):
-    sum1 = 0
-    for i in range(1, num):
-       if num % i == 0:
-           sum1 += i
-    return sum1
+# def summ_del(num):
+#     sum1 = 0
+#     for i in range(1, num):
+#        if num % i == 0:
+#            sum1 += i
+#     return sum1
 
-third = []
-for i in range(1, 20000):
-    second = summ_del(i)
-    first = summ_del(second)
-    if i == first and i < second:
-        print(i, second)
+# third = []
+# for i in range(1, 20000):
+#     second = summ_del(i)
+#     first = summ_del(second)
+#     if i == first and i < second:
+#         print(i, second)
