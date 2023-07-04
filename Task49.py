@@ -22,3 +22,23 @@ orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
 # print(*find_farthest_orbit(orbits))
 # Вывод:
 # 2.5 10
+def find_farthest_orbit(orbit):
+
+    s = orbit[(0)(0)] * orbit[(0)(1)] * 3.1415
+    return s
+from functools import reduce
+d = reduce(lambda x,y: x+y,map(lambda x:x+x,filter(lambda x: (x>=2), (1,2,3,4)))) 
+print(d)
+def func(a):
+    return a+a
+x = map(func, [(1, 2),(2, 3),(2, 4),(5, 6)]) # x - это объект типа map
+print(x)
+print(list(x))
+orbits = [[1, 3], [2.5, 10], [7, 2], [6, 6], [4, 3]]
+def find_farthest_orbit(orbit):
+ #   for i in (rows):
+  #      for j in (colums)
+  #      s = orbit[i][j] * orbit[i][j]
+    return 
+
+print(find_farthest_orbit(orbits))
