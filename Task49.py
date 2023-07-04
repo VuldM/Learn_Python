@@ -34,11 +34,9 @@ def func(a):
 x = map(func, [(1, 2),(2, 3),(2, 4),(5, 6)]) # x - это объект типа map
 print(x)
 print(list(x))
-orbits = [[1, 3], [2.5, 10], [7, 2], [6, 6], [4, 3]]
+orbits = [(1, 3), (2, 10), (7, 2), (6, 6), (4, 3)]
 def find_farthest_orbit(orbit):
- #   for i in (rows):
-  #      for j in (colums)
-  #      s = orbit[i][j] * orbit[i][j]
-    return 
-
+    s = [orbit[n][0] * orbit[n][1] for n in range(len(orbit))]
+    return s
+print(tuple(find_farthest_orbit(orbits)))
 print(find_farthest_orbit(orbits))
