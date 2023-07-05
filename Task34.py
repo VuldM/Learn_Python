@@ -11,3 +11,25 @@
 # пара-ра-рам рам-пам-папам па-ра-па-дам 
 # Вывод:
 # Парам пам-пам
+
+worlds = 'пара-ра-рам рам-пам-папам па-ра-па-дом'
+simv = 'а', 'е', 'ё', 'и', 'о', 'у', 'х', 'э', 'ю', 'я'
+print(worlds)
+worlds_0 = worlds.split(' ')
+print(worlds_0)
+s = 0
+z = []
+for i in range(len(worlds_0)):
+    for j in worlds_0[i]:
+        if j in simv:
+            s += 1
+    z.append(s)
+    s = 0
+for i in range(len(z)-1):
+    if z[i-1] != z[i]:
+        s = s + 1
+if s == 0:
+    print('Парам пам-пам')
+else:
+    print('Пам парам')
+

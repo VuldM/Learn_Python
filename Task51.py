@@ -8,10 +8,18 @@
 # функция, которая принимает объект и вычисляет его
 # характеристику.
 # Ввод: 
-values = [0, 2, 10, 6]
-# if same_by(lambda x: x % 2, values):
-# print(‘same’)
-# else:
-# print(‘different’)
+values = [0, 3, 4, 10, 6]
+
+def same_by(characteristic, objects):
+     list_0 = list(map(characteristic, objects))
+     if list_0.count(1) == 1:
+         return False
+     else:
+         return True
+
+if same_by(lambda x: x % 2, values):
+    print('same')
+else:
+    print('different')
 # Вывод:
 # same

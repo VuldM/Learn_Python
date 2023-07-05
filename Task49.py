@@ -22,21 +22,18 @@ orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
 # print(*find_farthest_orbit(orbits))
 # Вывод:
 # 2.5 10
-def find_farthest_orbit(orbit):
+import math
+orbits = [(1, 3), (2.5, 10), (7, 7), (6, 6), (4, 3)]
+def find_farthest_orbit(orbit):    
+    list_s = [[orbit[i][j] for j in range(2)] for i in range(len(orbit))if orbit[i][0] != orbit[i][1]]
+    min_s = 0.0
+    max_s = []       
+    for i in range(len(list_s)):
+            if round(math.pi*(list_s[i][0] * list_s[i][1]), 2) > min_s:
+                 max_s= (list_s[i][0],list_s[i][1]) #.append([list_s[i][0],list_s[i][1]]) 
+                 min_s = round(math.pi*(list_s[i][0] * list_s[i][1]), 2)
+                
+    return max_s
 
-    s = orbit[(0)(0)] * orbit[(0)(1)] * 3.1415
-    return s
-from functools import reduce
-d = reduce(lambda x,y: x+y,map(lambda x:x+x,filter(lambda x: (x>=2), (1,2,3,4)))) 
-print(d)
-def func(a):
-    return a+a
-x = map(func, [(1, 2),(2, 3),(2, 4),(5, 6)]) # x - это объект типа map
-print(x)
-print(list(x))
-orbits = [(1, 3), (2, 10), (7, 2), (6, 6), (4, 3)]
-def find_farthest_orbit(orbit):
-    s = [orbit[n][0] * orbit[n][1] for n in range(len(orbit))]
-    return s
-print(tuple(find_farthest_orbit(orbits)))
 print(find_farthest_orbit(orbits))
+
