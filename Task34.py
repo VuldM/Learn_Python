@@ -13,14 +13,15 @@
 # Парам пам-пам
 
 worlds = 'пара-ра-рам рам-пам-папам па-ра-па-дом'
+verse = input('напишите стихотворение: ')
 simv = 'а', 'е', 'ё', 'и', 'о', 'у', 'х', 'э', 'ю', 'я'
-print(worlds)
-worlds_0 = worlds.split(' ')
-print(worlds_0)
+print(verse)
+verse = verse.split(' ')
+print(verse)
 s = 0
 z = []
-for i in range(len(worlds_0)):
-    for j in worlds_0[i]:
+for i in range(len(verse)):
+    for j in verse[i]:
         if j in simv:
             s += 1
     z.append(s)
