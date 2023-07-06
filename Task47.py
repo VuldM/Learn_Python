@@ -20,8 +20,8 @@
 #  print('fail')
 # Вывод:   ok
 values = [1, 23, 42, 'asdfg', 2, 3, 5 , 7 , 25 , 36 , ]
-# def trasformation(a):
-#       return a
+def trasformation(a):
+      return a
 transformed_values = list(map(lambda n: n, values))
 if values == transformed_values:
     print('ok')
