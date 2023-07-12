@@ -24,7 +24,7 @@ def add_contact():
             add_FIO = input('Введите фамилию, имя, отчество: ')
             add_phone_num = input('Введите номер телефона: ')
             if add_phone_num.isdigit():
-                  file_contact.write(add_FIO +' '+ add_phone_num + '\n')
+                  file_contact.write(add_FIO +':'+ add_phone_num + '\n')
                   file_contact.close
                   flag = False
                   add_contact()
